@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;  
+}
+
+.game{
+    width: 300px;
+    height: 600px;
+    border: solid black;
+    position: relative;
+}
+
+.character{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;  
+}
+
+.animation{
+    animation: slide 1s infinite linear;
+}
+
+@keyframes slide {
+    0%{top:0px}
+    30%{top:150px}
+    70%{top:450px}
+    100%{top:600px}
+}   
+
+.finger1{
+    position: absolute;
+    height: 600px;
+    width: 150px; 
+}
+
+.finger2{
+    position: absolute;
+    height: 600px;
+    width: 150px;
+    left: 150px;  
+}  
+
+.curtain{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    z-index: 10000;
+}
+
+.measure{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 100px;
+    font-size: 85px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
